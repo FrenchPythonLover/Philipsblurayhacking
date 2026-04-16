@@ -1,0 +1,1731 @@
+B1:DQS(12~46), 35, 29
+0x7388=0x2e2e2e2e.
+B0:Gw( 1~127), 127, 62
+B1:Gw( 1~127), 127, 62
+0x7388=0x3e3e.
+A 256MB, x16
+B0:DQS(19~50), 32, 34
+B1:DQS(10~47), 38, 28
+0x7388=0x2e2e2e2e.
+B0:Gw( 1~127), 127, 61
+B1:Gw( 1~127), 127, 62
+0x7388=0x3e3d.
+B 128MB, x16
+
+        [0x40000de0]
+        [0x400026fc]
+        [0x40004fb8]
+LD *
+VFP
+aMTD Found at 0x300000
+FAVM 00:00:00.527 [AVM] amute inverse: REG_RW_PAD_CFG_1=0x000d0000
+                                                                  AVM 00:00:00.535 [AVM] amute function is output to aosdata2 pin: REG_RW_PAD_CFG_0=0xc0414680
+                                                                                                                                                              AVM 00:00:00.548 [AVM] DSP :v921
+                                                                                                                                                                                             t
+                                                                                                                                                                                             t
+                                                                                                                                                                                             s
+
+
+
+                                                                                                                                                                                             h
+                                                                                                                                                                                             f
+
+                                                                                                                                                                                             2
+
+                                                                                                                                                                                             k
+                                                                                                                                                                                             0
+                                                                                                                                                                                             )
+                                                                                                                                                                                             k
+                                                                                                                                                                                             K
+
+U-Boot 2009.08 (Jul 13 2011 - 15:42:50)
+
+NXP B.V. - MT85XX SoC with ARM1176JZF-S
+DRAM:  384 MB
+NAND:  128 MiB
+u-boot adaptive mtd mechanism applied.
+[_i_find_part_tbl]Part tbl info passed from preloader
+[_i_find_part_tbl] version is 1!!
+[_i_get_upg_status_in_nand]upg status passed from preloader
+Using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+r_args_to_uboot:
+        head sig        : 0xa0b0ead1
+        version : 1
+        boot type       : 0
+        dram ch1        : 0x10000000
+        dram ch2        : 0x08000000
+        kern addr       : 0x0d9fffc0
+        initrd addr     : 0x16700000
+        initrd size     : 0x00020173
+enable bim two way write.
+boot type:[0]
+Bootloader version 3847
+PHY reset fail
+n>)�B�T@#I
+Hit any key to stop autoboot:  0
+## Booting kernel from Legacy Image at 0d9fffc0 ...
+   Image Name:
+   Image Type:   ARM Linux Kernel Image (uncompressed)
+   Data Size:    1479464 Bytes =  1.4 MB
+   Load Address: 0da00000
+   Entry Point:  0da00000
+   Loading Kernel Image ... OK
+OK
+
+Starting kernel ...
+
+Uncompressing Linux... done, booting the kernel.
+Linux version 2.6.35 (mtk70389@mszslx14) (gcc version 4.5.1 (GCC) ) #18 SMP PREEMPT Wed Jul 13 15:41:31 CST 2011
+CPU: ARMv6-compatible processor [410fb767] revision 7 (ARMv7), cr=00c5387f
+CPU: VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+Machine: mt85xx
+Memory policy: ECC disabled, Data cache writeback
+PERCPU: Embedded 6 pages/cpu @c065b000 s3776 r8192 d12608 u65536
+pcpu-alloc: s3776 r8192 d12608 u65536 alloc=16*4096
+pcpu-alloc: [0] 0
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 97536
+Kernel command line: root=/dev/ram0 rw initrd=0x16700000,0x00020173 console=ttyMT0 kgdboc=ttyMT0 mem=384M mt85xx_reserve=367M,17M drvmem=182M,136M BL_Ver=3847
+PID hash table entries: 2048 (order: 1, 8192 bytes)
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+Memory: 384MB = 384MB total
+Memory: 229508k/229508k available, 163708k reserved, 0K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    DMA     : 0xffc00000 - 0xffe00000   (   2 MB)
+    vmalloc : 0xd8800000 - 0xf8000000   ( 504 MB)
+    lowmem  : 0xc0000000 - 0xd8000000   ( 384 MB)
+    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+      .init : 0xc0008000 - 0xc0022000   ( 104 kB)
+      .text : 0xc0022000 - 0xc02a6000   (2576 kB)
+      .data : 0xc02ba000 - 0xc02d30c0   ( 101 kB)
+SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Hierarchical RCU implementation.
+        RCU-based detection of stalled CPUs is disabled.
+        Verbose stalled-CPUs detection is disabled.
+NR_IRQS:128
+Console: colour dummy device 80x30
+console [ttyMT0] enabled
+_mt85xx_uart_console_init:register console ok
+Calibrating delay loop... 800.76 BogoMIPS (lpj=400384)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+CPU: Testing write buffer coherency: ok
+Brought up 1 CPUs
+SMP: Total of 1 processors activated (800.76 BogoMIPS).
+NET: Registered protocol family 16
+=== mt8560_init ===
+IC Version = B
+Serial: MT85XX driver $Revision: #25 $
+Serial : add uart port 0
+ttyMT0 at MMIO 0x7000c000 (irq = 14) is a MT85XX Serial
+Serial: driver_register 0
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+NET: Registered protocol family 2
+IP route cache hash table entries: 4096 (order: 2, 16384 bytes)
+TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+TCP bind hash table entries: 16384 (order: 5, 196608 bytes)
+TCP: Hash tables configured (established 16384 bind 16384)
+TCP reno registered
+UDP hash table entries: 256 (order: 1, 8192 bytes)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+NET: Registered protocol family 1
+Unpacking initramfs...
+Freeing initrd memory: 128K, pages: 32
+k_gpio module init success
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+msgmni has been set to 448
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 254)
+io scheduler noop registered
+io scheduler deadline registered (default)
+kgdb: Registered I/O driver kgdboc.
+loop: module loaded
+[_get_static_buffer]start...
+[_get_static_buffer]start_addr:0xd59c0000, alloc_sz:0x28000, buf_sz:0x25000
+[sata_bltin_init_buffer]sata_int_ldr_fw:0xd5a00000, sata_hw_seg_buf:0xd59c0000, sata_mtd_read_buf:0xd59c0000
+mt85xx_nand_alloc_memo1 address = 0xd5860000
+mt85xx_nand_alloc_memo2 address = 0xd5860020
+NAND device: Manufacturer ID: 0x98, Chip ID: 0xd1 (Toshiba NAND 128MiB 3,3V 8-bit)
+kernel adaptive mtd mechanism applied.
+mt85xx_part_tbl_init start.
+mt85xx_part_tbl_init success, v1 pit found !
+Creating 29 MTD partitions on "NAND 128MiB 3,3V 8-bit":
+0x000000000000-0x000000200000 : "boot_1"
+0x000000200000-0x000000400000 : "part_info_1"
+0x000000400000-0x000000600000 : "part_info_2"
+0x000000600000-0x000000700000 : "mac_addr_1"
+0x000000700000-0x000000800000 : "mac_addr_2"
+0x000000800000-0x000000900000 : "key_block_1"
+0x000000900000-0x000000a00000 : "key_block_2"
+0x000000a00000-0x000000c00000 : "fe_bin_1"
+0x000000c00000-0x000000e00000 : "fe_bin_2"
+0x000000e00000-0x000000f00000 : "fe_test_data"
+0x000000f00000-0x000001000000 : "fe_parameters"
+0x000001000000-0x000001100000 : "fe_power_curve"
+0x000001100000-0x000001300000 : "kernel_1"
+0x000001300000-0x000001500000 : "kernel_2"
+0x000001500000-0x000001800000 : "initrd_1"
+0x000001800000-0x000003100000 : "rootfs_normal_1"
+0x000003100000-0x000004a00000 : "rootfs_enc_1"
+0x000004a00000-0x000004b00000 : "rootfs_it_1"
+0x000004b00000-0x000004c00000 : "rootfs_enc_it_1"
+0x000004c00000-0x000004e00000 : "initrd_2"
+0x000004e00000-0x000005a00000 : "rootfs_normal_2"
+0x000005a00000-0x000005e00000 : "rootfs_enc_2"
+0x000005e00000-0x000005f00000 : "rootfs_it_2"
+0x000005f00000-0x000006000000 : "rootfs_enc_it_2"
+0x000006000000-0x000006100000 : "upg_status"
+0x000006100000-0x000006300000 : "fast_init_logo"
+0x000006300000-0x000006400000 : "fast_init_param"
+0x000006400000-0x000006500000 : "log_raw"
+0x000006500000-0x000007b20000 : "ubi0"
+star: eth_base=0xd882a000
+star: pinmux_base=0xd882e000
+star: pdwnc_base=0xd8832100
+star: eth_pdwnc_base=0xd8836c00
+star: eth_chksum_base=0xd883a000
+star: ipll_base1=0xd883e700
+star: ipll_base2=0xd8842300
+star: bsp_base=0xd8846000
+star: desc addr: 0xffc00000(virtual)/0x15877000(physical)
+Star Ethernet: Internal Vitesse PHY
+star: PHY addr = 0x0000
+star: Star MAC init done
+mice: PS/2 mouse device common for all mice
+TCP cubic registered
+NET: Registered protocol family 17
+PM Init
+VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+_mt85xx_late_console_init:register console ok
+Freeing init memory: 104K, pages: 26
+dbg_utility: module license 'Proprietary' taints kernel.
+Disabling lock debugging due to kernel taint
+/proc/bl_info created
+0xcb600000-0xd0000000 : channel1 continuous
+0xcb600000-0xcfde9f00 : channel1 dynamic
+0xd0000000-0xd3e00000 : channel2 continuous
+0xd3142000-0xd3e00000 : channel2 dynamic
+[nand part read-1], u4DevId = 25,                   u8Offset = 0x0, u4MemPtr = 0xd88bb000, u4MemLen = 0xac
+[get_upg_status] success.
+hard sector size is 512
+devblksize is 4096
+hard sector size is 512
+devblksize is 4096
+hard sector size is 512
+devblksize is 4096
+hard sector size is 512
+devblksize is 4096
+INIT: version 2.88 booting
+cli device init success
+                       open uart driver...
+                                          Init uart2 driver OK!
+                                                               Uart1 init OK!
+                                                                             Uart2 init OK!
+                                                                                           Set uart2 speed to 115200
+                                                                                                                    uart device init success
+                                                                                                                                            [NOTIFY] send_notification:0xf
+                                                                                                                                                                          [SYSTEM] init_sys_t!
+                                                                                                                                                                                             f
+                                                                                                                                                                                             f
+                                                                                                                                                                                             2
+                                                                                                                                                                                             0
+                                                                                                                                                                                             2
+                                                                                                                                                                                             .
+
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             0
+                                                                                                                                                                                             .
+                                                                                                                                                                                             T
+                                                                                                                                                                                             7
+                                                                                                                                                                                             5
+                                                                                                                                                                                             0
+                                                                                                                                                                                             c
+                                                                                                                                                                                             7
+                                                                                                                                                                                             8
+                                                                                                                                                                                             c
+                                                                                                                                                                                             8
+                                                                                                                                                                                             0
+                                                                                                                                                                                             c
+                                                                                                                                                                                             2
+                                                                                                                                                                                             c
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             t
+                                                                                                                                                                                             4
+                                                                                                                                                                                             4
+                                                                                                                                                                                             4
+                                                                                                                                                                                             4
+                                                                                                                                                                                             t
+                                                                                                                                                                                             o
+                                                                                                                                                                                             !
+                                                                                                                                                                                             !
+                                                                                                                                                                                             e
+
+                                                                                                                                                                                             !
+                                                                                                                                                                                             !
+                                                                                                                                                                                             !
+
+                                                                                                                                                                                             0
+
+                                                                                                                                                                                             !
+                                                                                                                                                                                             !
+
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             r
+
+                                                                                                                                                                                             .
+
+                                                                                                                                                                                             .
+
+                                                                                                                                                                                             n
+                                                                                                                                                                                             e
+                                                                                                                                                                                             3
+                                                                                                                                                                                             k
+                                                                                                                                                                                             0
+                                                                                                                                                                                             3
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             2
+                                                                                                                                                                                             0
+
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+
+                                                                                                                                                                                             8
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+
+                                                                                                                                                                                             8
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+
+                                                                                                                                                                                             8
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+
+                                                                                                                                                                                             8
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+
+                                                                                                                                                                                             8
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+
+                                                                                                                                                                                             8
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+
+                                                                                                                                                                                             8
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+
+                                                                                                                                                                                             8
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+
+                                                                                                                                                                                             8
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+
+                                                                                                                                                                                             8
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+
+                                                                                                                                                                                             6
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             =
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             =
+                                                                                                                                                                                             ]
+                                                                                                                                                                                             2
+                                                                                                                                                                                             2
+                                                                                                                                                                                             '
+                                                                                                                                                                                             2
+                                                                                                                                                                                             1
+                                                                                                                                                                                             2
+                                                                                                                                                                                             s
+                                                                                                                                                                                             f
+
+
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             1
+                                                                                                                                                                                             7
+                                                                                                                                                                                             0
+                                                                                                                                                                                             9
+                                                                                                                                                                                             2
+                                                                                                                                                                                             2
+                                                                                                                                                                                             2
+                                                                                                                                                                                             2
+                                                                                                                                                                                             3
+                                                                                                                                                                                             8
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             6
+                                                                                                                                                                                             4
+                                                                                                                                                                                             7
+                                                                                                                                                                                             7
+                                                                                                                                                                                             5
+                                                                                                                                                                                             5
+                                                                                                                                                                                             5
+                                                                                                                                                                                             4
+                                                                                                                                                                                             4
+                                                                                                                                                                                             6
+                                                                                                                                                                                             .
+                                                                                                                                                                                             )
+                                                                                                                                                                                             9
+                                                                                                                                                                                             e
+                                                                                                                                                                                             n
+                                                                                                                                                                                             0
+                                                                                                                                                                                             n
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             e
+                                                                                                                                                                                             )
+                                                                                                                                                                                             )
+                                                                                                                                                                                             N
+                                                                                                                                                                                             e
+                                                                                                                                                                                             p
+                                                                                                                                                                                             e
+                                                                                                                                                                                             n
+                                                                                                                                                                                             e
+                                                                                                                                                                                             n
+                                                                                                                                                                                             e
+                                                                                                                                                                                             =
+ubi_ctrl MAJOR_NUM is [10]
+ubi_ctrl MINOR_NUM is [63]
+ubiattach mtd29
+UBI: attaching mtd29 to ubi0
+                            UBI: physical eraseblock size:   131072 bytes (128 KiB)
+                                                                                   UBI: logical eraseblock size:    126976 bytes
+                                                                                                                                UBI: smallest flash I/O unit:    2048
+                                                                                                                                                                     UBI: VID header offset: )
+                                                                                                                                                                                             6
+                                                                                                                                                                                             0
+                                                                                                                                                                                             "
+                                                                                                                                                                                             B
+                                                                                                                                                                                             7
+                                                                                                                                                                                             0
+                                                                                                                                                                                             8
+                                                                                                                                                                                             6
+                                                                                                                                                                                             1
+                                                                                                                                                                                             1
+                                                                                                                                                                                             8
+                                                                                                                                                                                             9
+                                                                                                                                                                                             2
+                                                                                                                                                                                             8
+                                                                                                                                                                                             0
+                                                                                                                                                                                             9
+                                                                                                                                                                                             )
+ubiattach mtd29 success
+ubi0 MAJOR_NUM is [253]
+ubi0 MINOR_NUM is [0]
+no mnt dir -- mkdir -p /mnt/ubi_boot
+Try mount ubifs ubi_boot
+UBIFS: recovery needed
+                      UBIFS: recovery completed
+                                               UBIFS: mounted UBI device 0, volume 0, name "ubi_boot"
+                                                                                                     UBIFS: file system size:   15745024 bytes (15376 KiB, 15 MiB, 124 LEBs)
+                                                                                                                                                                            UBIFS: journal si)
+                                                                                                                                                                                             )
+                                                                                                                                                                                             o
+                                                                                                                                                                                             )
+                                                                                                                                                                                             !
+link [/mnt/log] -> [/mnt/ubi_boot/log]
+link [/mnt/nand_03_0] -> [/mnt/ubi_boot/APDA]
+link [/mnt/browser] -> [/mnt/ubi_boot/browser]
+lircd_simulator start
+=rcS end=
+INIT: Entering runlevel: 5
+lircd_simulator : started server socket
+=rc5 Start=
+[IR]ir_open success![NOTIFY] send_notification:0x3f3
+[SYSTEM] init_sys_thread_main !
+[NOTIFY] send_notification:0x3ff
+Has pass word protect
+
+cli driver open success
+                       cli init ok!
+[RM Krn] _i4RmOpen() lalala.
+                            [RM] Self-testing OK!!!
+[CHIP_CAP] chip_cap_kopen lalala
+                                IOCTL_CHIP_CAP_GET_AUDIO_CAPABILITY Fail !!!
+audio_cap = 0
+wa_init fail!!
+[TZ_INTF] tz_intf_kopen lalala
+                              [USR_STATIC_MEM] usr_static_mem_kopen lalala
+                                                                          Set input mode
+Command>[DRV_INIT_PROG] driver_notify, argc:2
+[DRV_INIT_PROG] vDriverInit, level:2048
+MW init Phase 1 vMwInitDefCfg time elapsed: 0 (us)
+MW init Phase 1 fm_init time elapsed: 1000 (us)
+MW init Phase 1 iom_init time elapsed: 47000 (us)
+MW init Phase 1 fe_init time elapsed: 49000 (us)
+MW init Phase 1 gl_init time elapsed: 115000 (us)
+MW init Phase 1 sm_init time elapsed: 99000 (us)
+MW init Phase 1 aee_init time elapsed: 19000 (us)
+MW init Phase 1 scom_init time elapsed: 19000 (us)
+MW init Phase 1 i4MwInitScc time elapsed: 2000 (us)
+[PMX]PMX_IsrEnable: 0.
+                      MW init Phase 1 x_img_png_init time elapsed: 15000 (us)
+MW init Phase 1 x_img_jpg_init time elapsed: 2000 (us)
+MW init Phase 1 vInitWidgets time elapsed: 1000 (us)
+MW init Phase 1 time elapsed: 369000 (us)
+MMW init Phase 1 time elapsed: 36000 (us)
+[FAST_BOOT] NOTIFY_MENU_LEVEL
+Freeing mt85xx_fastlogo_buffer_reserve memory: 11264K, pages: 2816
+                                                                  {SHOWLOGO}c_show_logo is called
+{SHOWLOGO}x_show_logo is called
+{SHOWLOGO}_showlogo_lock is called
+{SHOWLOGO}API:show_logo is called!,at L758
+[RM Usr] _i4RmGetDrvEntry(), eDrvType = 0, u4DrvEntIdx = 0 overflow or not found.
+[RM Usr] rm_usr_get_comp_info_from_handle(), _i4RmGetDrvEntry fail.
+[VDP] CONNECT ,drv type e_type = 64
+                                   <SHOWLOGO>_showlogo_get_logo_data_for_linux() is called
+{SHOWLOGO}INFO:original size [534641]
+[ESM] i4ESM_FifoMemSet, hdl:0x0, size:0x82900
+                                             [ESM] i4ESM_FifoMemSet, type:0x1, size:0x82900
+                                                                                           [FBM][FBM] Start Alloc FBuf 1. BufType:4, (1920,1080), Count:7.
+                                                                                                                                                          [FBM][FBM] Alloc FBuf 1. BufType:4,.
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+{SHOWLOGO}sl_scc_vid_iframe_nfy_cb is called, nfy cond is: 0
+{SHOWLOGO}sl_scc_vid_iframe_nfy_cb is called, nfy cond is: 3
+{SHOWLOGO}sl_scc_vid_iframe_nfy_cb is called, nfy cond is: 0
+[FAST_BOOT] c_init_external_resource
+[FAST_BOOT] init_fonts
+<APP_START> application_notify(2,2048)
+<TimeStamp> Applications init start 26s.689881us L1607
+<TimeStamp> i4_level = 2048
+<TimeStamp> diversity_init init. 26s.690258us L1612
+diversity_init(USR) [201107041813]
+[Diversity] CTN -> BDP3280/12
+[Diversity USR] Model BDP3280, Stroke 12
+diversity_init(USR) Opening diversity file '/usr/diversity/BDP3280.bin'
+_diversity_set_stroke: Number of strokes 6, Stroke 12
+_diversity_set_stroke: Setting stroke num 12, idx 1
+[Diversity USR] CTN BDP3280/12
+<TimeStamp> diversity_init done. 26s.724923us L1614
+<TimeStamp> vAppCustFlashLayoutInit done. 26s.745419us L1618
+[proc_read_media_present]REGISTER = 0x0022
+                                          SATA media_present =:0x30
+<TimeStamp> no disc
+ 26s.746099us L2465
+<TimeStamp> a_amngr_app_create_all_asset_tpl done. 26s.774700us L1630
+<TimeStamp> a_amngr_app_init_surface_by_group first/share done. 28s.177050us L1637
+<COMM_FUNC>find mtd_id succeed, mtd_id = 27
+[i4NFBPartitionRead]u4DevId = 27, u8Offset = 0x0, u4MemPtr = 0x4a08bbe0, u4MemLen = 1242086368
+[NAND] ECC failed: 0
+[NAND] ECC corrected: 0
+[NAND] Number of bad blocks: 0
+[NAND] Number of bbt blocks: 0
+[MAC]Analyze /proc/mtd rd_length = 1196 !!
+mac_addr_1 - /dev/mtd4
+mac_addr_2 - /dev/mtd5
+<MwNetCfg> GET MAC in RAW Mode.
+[i4NFBPartitionRead]u4DevId = 4, u8Offset = 0x0, u4MemPtr = 0x4a08bd3c, u4MemLen = 1242086716
+[NAND] ECC failed: 0
+[NAND] ECC corrected: 0
+[NAND] Number of bad blocks: 0
+[NAND] Number of bbt blocks: 0
+[[MwNetCfg]:mac addr: dc-20- 8- e-4f-bd
+[SCOM_API]set user format description_ex
+[PMX]SetModeEx
+              [CCIR] Disable CCIR Input, Res = 13!
+                                                  [OSD][osd_base_if]_i4Osd5Out_CVBSOnly. fgOsd5MesgPath = 1, eResMode is 1
+                                                                                                                          [TVE] EX Gamma para: 0 , 0 , 0
+                                                                                                                                                         [TVE] EX Gamma para: 1 , 0 , 0
+                                                                                                                                                                                        [OSD]e
+                                                                                                                                                                                             1
+[SCOM]policy=0
+[OSD]Disable all plane before change resolution
+                                               [OSD][osd_base_if] rDspMode =13.
+                                                                               [OSD]Enable all plane that been closed before change resolution
+                                                                                                                                              [OSD]Change resolution done
+                                                                                                                                                                         [SCOM]e_result=5
+[SCOM] b_apply_on_next=0
+[SCOM_API]set user format description_ex
+[PMX]SetModeEx
+              [PMX]Display Format Change :0.
+                                            [PMX]Set Osd Enable :1.
+                                                                   [VDP] fgVdpIsWaitforSyncCtrl return false
+                                                                                                            [PMX]PMX_SetOsdEnable.
+                                                                                                                                  [PMX]Set Osd Enable :0.
+                                                                                                                                                         [PMX][PMX] fgHdmiExist:0, Not wait d.
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             e
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             0
+[SCOM]policy=0
+[SCOM]e_result=5
+[SCOM_API]set user format description_ex
+[PMX]SetModeEx
+              [PMX]Display Format Change :0.
+                                            [PMX]Set Osd Enable :1.
+                                                                   [VDP] fgVdpIsWaitforSyncCtrl return false
+                                                                                                            [PMX]PMX_SetOsdEnable.
+                                                                                                                                  [PMX]Set Osd Enable :0.
+                                                                                                                                                         [PMX][PMX] fgHdmiExist:0, Not wait d.
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             e
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             0
+[SCOM]policy=0
+[SCOM]e_result=5
+[SCOM_API]set user format description_ex
+[PMX]SetModeEx
+              [PMX]Display Format Change :0.
+                                            [PMX]Set Osd Enable :1.
+                                                                   [VDP] fgVdpIsWaitforSyncCtrl return false
+                                                                                                            [PMX]PMX_SetOsdEnable.
+                                                                                                                                  [PMX]Set Osd Enable :0.
+                                                                                                                                                         [PMX][PMX] fgHdmiExist:0, Not wait d.
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             e
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             0
+[SCOM]policy=0
+[SCOM]e_result=5
+[SCOM_API]set user format description_ex
+[PMX]SetModeEx
+              [PMX]Display Format Change :0.
+                                            [PMX]Set Osd Enable :1.
+                                                                   [VDP] fgVdpIsWaitforSyncCtrl return false
+                                                                                                            [PMX]PMX_SetOsdEnable.
+                                                                                                                                  [PMX]Set Osd Enable :0.
+                                                                                                                                                         [PMX][PMX] fgHdmiExist:0, Not wait d.
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             e
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             0
+[SCOM]policy=0
+[SCOM]e_result=5
+[SCOM_API]set user format description_ex
+[PMX]SetModeEx
+              [PMX]Display Format Change :0.
+                                            [PMX]Set Osd Enable :1.
+                                                                   [VDP] fgVdpIsWaitforSyncCtrl return false
+                                                                                                            [PMX]PMX_SetOsdEnable.
+                                                                                                                                  [PMX]Set Osd Enable :0.
+                                                                                                                                                         [PMX][PMX] fgHdmiExist:0, Not wait d.
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             e
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             0
+[SCOM]policy=0
+[SCOM]e_result=5
+[SCOM_API]set user format description_ex
+[PMX]SetModeEx
+              [PMX]Display Format Change :0.
+                                            [PMX]Set Osd Enable :1.
+                                                                   [VDP] fgVdpIsWaitforSyncCtrl return false
+                                                                                                            [PMX]PMX_SetOsdEnable.
+                                                                                                                                  [PMX]Set Osd Enable :0.
+                                                                                                                                                         [CCIR] Disable CCIR Input, Res = 13!
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             e
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             0
+[SCOM]policy=0
+[SCOM]e_result=5
+[AVD] eSpkCong = 2
+                  [AVD] _AudToAvdPara.u1Aud_Codec_Fmt = 1
+                                                         [AVD] vUpdateAudioOutputChMap aud_out_ch = 00000003 ([0:10]=> L/R/LFE/C/Ls/Rs/Cs/LFC/RFC/Lsr/Rsr)
+                                                                                                                                                          [AVD] vUpdateAudioOutputChMap remap0
+
+
+                                                                                                                                                                                             x
+[PMX]SetModeEx
+              [PMX][PMX] fgHdmiExist:0, Not wait display part...
+                                                                [PMX]Display Format Change :0.
+                                                                                              [PMX]Set Osd Enable :1.
+                                                                                                                     [VDP] fgVdpIsWaitforSyncCtrl return false
+                                                                                                                                                              [PMX]PMX_SetOsdEnable.
+                                                                                                                                                                                    [PMX]Set .
+                                                                                                                                                                                             0
+[SCOM]policy=0
+[SCOM]e_result=5
+[SCOM_API]set user format description_ex
+[PMX]SetModeEx
+              [PMX][PMX] fgHdmiExist:0, Not wait display part...
+                                                                [PMX]Display Format Change :0.
+                                                                                              [PMX]Set Osd Enable :1.
+                                                                                                                     [VDP] fgVdpIsWaitforSyncCtrl return false
+                                                                                                                                                              [PMX]PMX_SetOsdEnable.
+                                                                                                                                                                                    [PMX]Set .
+                                                                                                                                                                                             0
+[SCOM]policy=0
+[SCOM]e_result=5
+[SCOM_API]set user format description_ex
+[PMX]SetModeEx
+              [PMX][PMX] fgHdmiExist:0, Not wait display part...
+                                                                [PMX]Display Format Change :0.
+                                                                                              [PMX]Set Osd Enable :1.
+                                                                                                                     [VDP] fgVdpIsWaitforSyncCtrl return false
+                                                                                                                                                              [PMX]PMX_SetOsdEnable.
+                                                                                                                                                                                    [PMX]Set .
+                                                                                                                                                                                             0
+[SCOM]policy=0
+[SCOM]e_result=5
+[SCOM_API]set user format description_ex
+[PMX]SetModeEx
+              [PMX][PMX] fgHdmiExist:0, Not wait display part...
+                                                                [PMX]Display Format Change :0.
+                                                                                              [PMX]Set Osd Enable :1.
+                                                                                                                     [VDP] fgVdpIsWaitforSyncCtrl return false
+                                                                                                                                                              [PMX]PMX_SetOsdEnable.
+                                                                                                                                                                                    [PMX]Set .
+                                                                                                                                                                                             0
+[SCOM]policy=0
+[SCOM]e_result=5
+<TimeStamp> acfg init done. 28s.476735us L1646
+<TimeStamp> _wgl_font_init done. 28s.590968us L1675
+<HS> _hs_app_init_fct
+----> add h_linked_screen
+create canvas width 1920, height 1080
+create canvas width 1920, height 1080
+[OSD][_OsdCreateBitmapEx]: prBmp->pvFreePoint = 0xd3142fc0
+                                                          create canvas viewport width 1920, height 1080
+[PMX]Display Format Change :0.
+                              [PMX]Set Osd Enable :1.
+                                                     [VDP] fgVdpIsWaitforSyncCtrl return false
+                                                                                              [PMX]PMX_SetOsdEnable.
+                                                                                                                    [PMX]Set Osd Enable :0.
+                                                                                                                                           [PMX]Display Format Change :0.
+                                                                                                                                                                         [PMX]Set Osd Enable .
+                                                                                                                                                                                             e
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             e
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             e
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             e
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+<HS> Icon at -1, Text set to "Parcourir USB". Same Text, Ignored.
+<HS> Icon at -1, Text set to "YouTube". Same Text, Ignored.
+<HS> Icon at -1, Text set to "Picasa". Same Text, Ignored.
+<HS> Icon at -1, Text set to "Configuration". Same Text, Ignored.
+[proc_read_media_present]REGISTER = 0x0022
+                                          <TimeStamp> home start done. 28s.808285us L1739
+<COMM_FUNC>find mtd_id succeed, mtd_id = 27
+[i4NFBPartitionRead]u4DevId = 27, u8Offset = 0x0, u4MemPtr = 0x49980cf0, u4MemLen = 1234701552
+[NAND] ECC failed: 0
+[NAND] ECC corrected: 0
+[NAND] Number of bad blocks: 0
+[NAND] Number of bbt blocks: 0
+Null pointer! in hs_icon_set_visibility.
+<NETWORK> a_network_get_cur_interface value : 6
+eth0 is unplug!
+<NETWORK> API: a_network_get_interface_connect_status( 6) == 2
+Null Handle! in hs_icon_change_state.
+Null Handle! in hs_icon_change_state.
+Null Handle! in hs_icon_change_state.
+[proc_read_media_present]REGISTER = 0x0022
+                                          <HS> Icon at 0, Text set to "Pas de disque". Same Text, Ignored.
+<TimeStamp> home resume done. 29s.525863us L1771
+----> add h_linked_screen
+[AVD]DRV_HDMI_NFY_HDCP_OK...1
+                             [AVD]AVD_NOTIFY_HDCP_OK, start format change timer...
+                                                                                  [PMX]Display Format Change Timer Set.
+                                                                                                                       <SETUP> ERR: file = custom/philips/src/application/UI_8bit/setup/setup7
+<ID_APP1> _id_app1_widget_init
+<ID_APP1>editbox_create start
+<ID_APP1>ui4_msg default
+<ID_APP1>ui4_msg default
+<ID_APP1>ui4_msg default
+<ID_APP1>ui4_msg default
+<ID_APP1>ui4_msg default
+<ID_APP1>ui4_msg default
+<ID_APP1>ui4_msg default
+<ID_APP1>ui4_msg default
+<TimeStamp> setup start done. 29s.789065us L1805
+<TimeStamp> misc start done. 29s.789861us L1856
+<TimeStamp> wlan_execve_script done. 29s.790105us L1859
+[NOTIFY] send_notification:0x3ff
+[DRV_INIT_PROG] driver_notify, argc:2
+[DRV_INIT_PROG] vDriverInit, level:1
+[DRV_INIT_PROG] Menu level, to insert bdpdrv
+[DRV_INIT_PROG] insert_kernel_module bdpdrv.ko, inserted:0x0, to insert:0x0
+[DRV_INIT_PROG] LoadFileToDram, file_size:0x31c33c
+[DRV_INIT_PROG] insert_kernel_module, dram_pointer:0x4a883000
+<COMMON> TRACER:  misc_this_obj.e_tray_state is set to 0, L600, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_eject_event.e_last_eject is set to 0, L601, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_eject_event.i4_key_count is set to 0, L602, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_eject_event.b_key_process_state is set to 0, L603, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.b_is_the_first_notify is set to 0, L605, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.b_first_for_no_disc is set to 0, L606, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.b_first_auto_play is set to 1, L607, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.b_power_off_process is set to 0, L618, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.b_upgrade_process is set to 0, L620, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.b_tray_out_or_not is set to 0, L622, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.b_send_msg_to_app is set to 1, L624, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.b_pbmg_register is set to 0, L627, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_disc_info.b_disc_corrupt is set to 0, L629, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_dev_info[ui1_idx].b_pluge_out_show is set to 0, L636, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_dev_info[ui1_idx].e_dev_state is set to 0, L637, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_dev_info[ui1_idx].b_pluge_out_show is set to 0, L636, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_dev_info[ui1_idx].e_dev_state is set to 0, L637, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_dev_info[ui1_idx].b_pluge_out_show is set to 0, L636, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_dev_info[ui1_idx].e_dev_state is set to 0, L637, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_dev_info[ui1_idx].b_pluge_out_show is set to 0, L636, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_dev_info[ui1_idx].e_dev_state is set to 0, L637, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_dev_info[ui1_idx].b_pluge_out_show is set to 0, L636, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_dev_info[ui1_idx].e_dev_state is set to 0, L637, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_dev_info[ui1_idx].b_pluge_out_show is set to 0, L636, _misc_init_event
+<COMMON> TRACER:  misc_this_obj.t_dev_info[ui1_idx].e_dev_state is set to 0, L637, _misc_init_event
+----> add h_linked_screen
+<COMMON> TRACER:  misc_this_obj.b_send_msg_to_app is set to 1, L1541, _misc_app_process_msg_fct
+[DRV_INIT_KO] driver_notify:0x2
+                               [DRV_INIT_KO] notify level:0x1
+                                                             [i4IdeDrvInit]register suspend to DRAM resume function
+                                                                                                                   [i4IdeDrvBootup]Start..
+                                                                                                                                          [i4IdeDrvBootup]End..
+                                                                                                                                                               [KM]GetProcMtdInfo
+                                                                                                                                                                                 [KM]/proc/mt!
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             0
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             s
+
+                                                                                                                                                                                             l
+                                                                                                                                                                                             t
+                                                                                                                                                                                             5
+                                                                                                                                                                                             !
+[RM Krn] x_rm_reg_comp(), type:365
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:365
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:365
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:365
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:365
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:365
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:365
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:365
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:365
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:53
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:68
+                                 [RM] Self-testing OK!!!
+[AUD][AUD]Enable set channel status timer success!
+                                                  [RM Krn] x_rm_reg_comp(), type:363
+                                                                                    [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:363
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:363
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:363
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:32
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:32
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:32
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:32
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:33
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:33
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:33
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:33
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:33
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:33
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:33
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:33
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:33
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:33
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:33
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:33
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:71
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:71
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:71
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:71
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:71
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:364
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:364
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:364
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:364
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:364
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:364
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:51
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:51
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:51
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:51
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:366
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:36
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:36
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:36
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:36
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:41
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:52
+                                 [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:370
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:377
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:108
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:108
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:108
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:108
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:108
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:108
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:108
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:110
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:110
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:110
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:110
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:110
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:110
+                                  [RM] Self-testing OK!!!
+[RM Krn] x_rm_reg_comp(), type:110
+                                  [RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[RM] Self-testing OK!!!
+[DRV_INIT_PROG] insert_kernel_module, ret:0x0
+[DRV_INIT_PROG] Menu level, to insert jdec.ko
+[DRV_INIT_PROG] insert_kernel_module jdec.ko, inserted:0x0, to insert:0x0
+[DRV_INIT_PROG] LoadFileToDram, file_size:0x16ac
+[DRV_INIT_PROG] insert_kernel_module, dram_pointer:0x4a883000
+[DRV_INIT_PROG] insert_kernel_module, ret:0x0
+[DRV_INIT_PROG] Menu level, to insert png.ko
+[DRV_INIT_PROG] insert_kernel_module png.ko, inserted:0x0, to insert:0x0
+[DRV_INIT_PROG] LoadFileToDram, file_size:0x1778
+[DRV_INIT_PROG] insert_kernel_module, dram_pointer:0x4a883000
+[DRV_INIT_PROG] insert_kernel_module, ret:0x0
+libmtp version: 0.3.6
+
+Listing raw device(s)
+[DLL_UTIL] semaphore create. i = 0
+[DLL_UTIL] semaphore create successed. handle = 0x1b86a40
+[DLL_UTIL] semaphore create. i = 1
+[DLL_UTIL] semaphore create successed. handle = 0x1b86aa8
+[DLL_UTIL] semaphore create. i = 2
+[DLL_UTIL] semaphore create successed. handle = 0x1b86b10
+[DLL_UTIL] semaphore create. i = 3
+[DLL_UTIL] semaphore create successed. handle = 0x1b86b78
+[DLL_UTIL] semaphore create. i = 4
+[DLL_UTIL] semaphore create successed. handle = 0x1b86be0
+[DLL_UTIL] semaphore create. i = 5
+[DLL_UTIL] semaphore create successed. handle = 0x1b86c48
+[AREC]vArecInit begin
+[AREC]: _fgArecInstList[0] =0.
+[AORG]:  vAorgInit begin .
+[AORG]:  vAorgInit out .
+[AREC]vArecInit end
+[MTPFM] x_fm_mtp_init: #619: return 0
+{CM} x_hbidec_reg_handler().
+{CM} cm_reg_handler()t_hbidec_handler.h_handler = 0x16380.
+[AIH] x_aih_reg_handler( )
+
+[AIH] aih_set_init OK
+[AIH] aih_thread_main
+[AIH] aih_thread_main into while
+lpchtest_cli_initaihtest_cli_initscomtest_cli_initarec_cli_init{mw_notify}i4Notify_init done
+handle_reg_cli init
+handle_reg_cli called
+b_init
+cli supported
+handle_reg_cli success return
+vPbCliEntry!
+in hbigfx_cli_init
+@@ start to do nrdadpt_sys_init
+@@ nrdadpt_sys_init OK!
+nrd test cli init OKtcm test cli init OKhf_cli_init inited.
+[MTKPBCTRL] mtkpbctrltest_cli_init
+c_rpc_init_mtkpbctrl_server is called
+c_rpc_server_init is called
+rpc_init is called
+_init_hash(), ui4_tbl_len_order=10, ui4_num=1024
+ipc_init is called, L2412
+ipc_init is called, L2415
+getline,ps_line=bdpprog, read_size=8, z_len=120
+ipc_init is called, L2433
+ipc_init is called, L2438
+ipc_init is called, L2480
+ipc_init is called, pv_key_sess=0x1bb17a8, L2490
+ipc_init is called, L2499
+ipc_init is called, L2507
+pt_free = &pt_sess_tbl[1]
+ipc_init is called, L2513
+RPC Inited
+REG OP HNDLR x_MtkPb_Ctrl_Open, 0x0xd075e9
+REG OP HNDLR x_MtkPb_Ctrl_Close, 0x0xd074ad
+REG OP HNDLR x_MtkPb_Ctrl_RegCallback, 0x0xd073ed
+REG OP HNDLR x_MtkPb_Ctrl_SetEngineParam, 0x0xd071ad
+REG OP HNDLR x_MtkPb_Ctrl_SetMediaInfo, 0x0xd070f9
+REG OP HNDLR x_MtkPb_Ctrl_SetExtraInfo, 0x0xd07099
+REG OP HNDLR x_MtkPb_Ctrl_SetAudTrack, 0x0xd07039
+REG OP HNDLR x_MtkPb_Ctrl_SetDisplayRectangle, 0x0xd06f8d
+REG OP HNDLR x_MtkPb_Ctrl_CancelGetBufferPending, 0x0xd06f3d
+REG OP HNDLR x_MtkPb_Ctrl_SendData, 0x0xd06ea1
+REG OP HNDLR x_MtkPb_Ctrl_SendCmd, 0x0xd06e41
+REG OP HNDLR x_MtkPb_Ctrl_ReleaseBuffer, 0x0xd05f81
+REG OP HNDLR x_MtkPb_Ctrl_SetPushModelEOS, 0x0xd06de1
+REG OP HNDLR x_MtkPb_Ctrl_GenerateP0Header, 0x0xd06d65
+REG OP HNDLR x_MtkPb_Ctrl_GenerateRVPicHdr, 0x0xd06ce9
+REG OP HNDLR x_MtkPb_Ctrl_Play, 0x0xd06c89
+REG OP HNDLR x_MtkPb_Ctrl_PlayEx, 0x0xd06c25
+REG OP HNDLR x_MtkPb_Ctrl_Pause, 0x0xd06bc5
+REG OP HNDLR x_MtkPb_Ctrl_Stop, 0x0xd06b65
+REG OP HNDLR x_MtkPb_Ctrl_Step, 0x0xd06b05
+REG OP HNDLR x_MtkPb_Ctrl_TimeSeek, 0x0xd06a89
+REG OP HNDLR x_MtkPb_Ctrl_TimeSeekEx, 0x0xd06a25
+REG OP HNDLR x_MtkPb_Ctrl_ChangeAudio, 0x0xd069c5
+REG OP HNDLR x_MtkPb_Ctrl_ChangeVideo, 0x0xd06965
+REG OP HNDLR x_MtkPb_Ctrl_SetSpeed, 0x0xd06905
+REG OP HNDLR x_MtkPb_Ctrl_SetPlayMode, 0x0xd068a5
+REG OP HNDLR x_MtkPb_Ctrl_GetMediaInfo, 0x0xd06841
+REG OP HNDLR x_MtkPb_Ctrl_GetBufferFullness, 0x0xd067dd
+REG OP HNDLR x_MtkPb_Ctrl_GetBufferStatus, 0x0xd06779
+REG OP HNDLR x_MtkPb_Ctrl_GetPlayParam, 0x0xd06715
+REG OP HNDLR x_MtkPb_Ctrl_GetAudTrackInfo, 0x0xd066ad
+REG OP HNDLR x_MtkPb_Ctrl_GetCurAudTrackInfo, 0x0xd06649
+REG OP HNDLR x_MtkPb_Ctrl_GetVidTrackInfo, 0x0xd065e5
+REG OP HNDLR x_MtkPb_Ctrl_GetCurrentPos, 0x0xd06579
+REG OP HNDLR x_MtkPb_Ctrl_GetCurrentPTS, 0x0xd0650d
+REG OP HNDLR x_MtkPb_Ctrl_GetState, 0x0xd06489
+REG OP HNDLR x_MtkPb_Ctrl_Ext_EncPb, 0x0xd0603d
+REG OP HNDLR x_MtkPb_Ctrl_Ext_SetEncBufferParm, 0x0xd06075
+REG OP HNDLR x_MtkPb_Ctrl_Ext_EncEnable, 0x0xd0600d
+REG OP HNDLR x_MtkPb_Ctrl_ClearVideo, 0x0xd06429
+REG OP HNDLR x_IMtkPb_Ctrl_Ext_Ipc_StartSnapshot, 0x0xd063bd
+REG OP HNDLR x_IMtkPb_Ctrl_Ext_Ipc_StopSnapshot, 0x0xd0635d
+REG OP HNDLR x_IMtkPb_Ctrl_CustomizeHttpReqHdr, 0x0xd062fd
+REG OP HNDLR x_MtkPb_Ctrl_Pull_Nfy_Fct, 0x0xd05f85
+REG OP HNDLR x_MtkPb_Ctrl_Ipc_Get_Mem_Slice_Info, 0x0xd06299
+REG OP HNDLR x_MtkPb_Ctrl_Ipc_Get_Mem_Slice_Handle, 0x0xd061cd
+REG OP HNDLR x_MtkPb_Ctrl_Ipc_RegSendDataNfyCallback, 0x0xd060a1
+rpcu_tl_log_start is called
+rpcu_tl_log_is_on is called
+c_rpc_start_server is called
+Open Server:mtkpbctrl -logfunction -loglevel
+_alloc_id
+<LOG bdpprog, _alloc_id, #585>New IPC ID (Count 1)
+[PMX]PMX timeout.
+                 [PMX]Display Format Change :0.
+                                               [PMX]Set Osd Enable :1.
+                                                                      [VDP] fgVdpIsWaitforSyncCtrl return false
+                                                                                                               [PMX]PMX_SetOsdEnable.
+                                                                                                                                     [PMX]Set Osd Enable :0.
+                                                                                                                                                            [MTKPBCTRL] IMtkPb_Ctrl_Init OK
+c_rpc_init_mtkpbsnd_server is called
+c_rpc_server_init is called
+rpc_init is called
+rpc_init is already done
+ipc_init is called, L2412
+ipc_init is called, L2415
+getline,ps_line=bdpprog, read_size=8, z_len=120
+ipc_init is called, L2433
+ipc_init is called, L2438
+ipc_init is called, L2480
+ipc_init is called, pv_key_sess=0x1bb17a8, L2490
+ipc_init is called, L2499
+ipc_init is called, L2507
+ipc_init is called, L2513
+RPC Inited
+REG OP HNDLR x_MtkPb_Snd_Count, 0x0xd09121
+REG OP HNDLR x_MtkPb_Snd_Query_Capability, 0x0xd089cd
+REG OP HNDLR x_MtkPb_Snd_Open, 0x0xd09051
+REG OP HNDLR x_MtkPb_Snd_SetParameter, 0x0xd08ff1
+REG OP HNDLR x_MtkPb_Snd_RegCallback, 0x0xd08f05
+REG OP HNDLR x_MtkPb_Snd_SendClip, 0x0xd08d91
+REG OP HNDLR x_MtkPb_Snd_Play, 0x0xd08d31
+REG OP HNDLR x_MtkPb_Snd_Stop, 0x0xd08cd1
+REG OP HNDLR x_MtkPb_Snd_Pause, 0x0xd08c71
+REG OP HNDLR x_MtkPb_Snd_Resume, 0x0xd08c11
+REG OP HNDLR x_MtkPb_Snd_Close, 0x0xd08b11
+REG OP HNDLR x_MtkPb_Snd_Reg_SendDataNfyCallback, 0x0xd089f1
+rpcu_tl_log_start is already done
+c_rpc_start_snd_server is called
+Open Server:mtkpbsnd
+_alloc_id
+Initialize common interface sound server done, id=2
+c_rpc_init_mtkpbsnd_server is called
+c_rpc_server_init is called
+rpc_init is called
+rpc_init is already done
+ipc_init is called, L2412
+ipc_init is called, L2415
+getline,ps_line=bdpprog, read_size=8, z_len=120
+ipc_init is called, L2433
+ipc_init is called, L2438
+ipc_init is called, L2480
+ipc_init is called, pv_key_sess=0x1bb17a8, L2490
+ipc_init is called, L2499
+ipc_init is called, L2507
+ipc_init is called, L2513
+RPC Inited
+REG OP HNDLR x_MtkPb_Misc_Init, 0x0xd098b5
+REG OP HNDLR x_MtkPb_Misc_Terminate, 0x0xd09869
+REG OP HNDLR x_MtkPb_Misc_GetAudioVolume, 0x0xd09809
+REG OP HNDLR x_MtkPb_Misc_SetAudioVolume, 0x0xd097a9
+REG OP HNDLR x_MtkPb_Misc_GetUserPref, 0x0xd095fd
+rpcu_tl_log_start is already done
+c_rpc_start_misc_server is called
+Open Server:mtkpbmisc
+_alloc_id
+Initialize common interface misc server done, id=0
+[MTKCFG] mtkcfgtest_cli_init
+c_rpc_init_mtkcfg_server is called
+c_rpc_server_init is called
+rpc_init is called
+rpc_init is already done
+ipc_init is called, L2412
+ipc_init is called, L2415
+getline,ps_line=bdpprog, read_size=8, z_len=120
+ipc_init is called, L2433
+ipc_init is called, L2438
+ipc_init is called, L2480
+ipc_init is called, pv_key_sess=0x1bb17a8, L2490
+ipc_init is called, L2499
+ipc_init is called, L2507
+ipc_init is called, L2513
+RPC Inited
+REG OP HNDLR x_MtkCfg_Open, 0x0xd0a4a1
+REG OP HNDLR x_MtkCfg_Close, 0x0xd0a3ed
+REG OP HNDLR x_MtkCfg_Aud_Set_Reencode_Info, 0x0xd0a379
+REG OP HNDLR x_MtkCfg_Vid_Set_Cps_Info, 0x0xd0a319
+REG OP HNDLR x_MtkCfg_Aud_Set_Cgms_Permission, 0x0xd0a2b9
+REG OP HNDLR x_MtkCfg_Vid_Enable_Video_Output, 0x0xd0a259
+REG OP HNDLR x_MtkCfg_Vid_Disable_Video_Output, 0x0xd0a1f9
+REG OP HNDLR x_MtkCfg_Get_Support_Format, 0x0xd0a199
+REG OP HNDLR x_MtkCfg_Set_User_Format, 0x0xd0a139
+REG OP HNDLR x_MtkCfg_Get_User_Format, 0x0xd0a0d9
+REG OP HNDLR x_MtkCfg_Get_Output_Format, 0x0xd0a079
+REG OP HNDLR x_MtkCfg_Set_Audio_Mute_Unmute, 0x0xd0a011
+REG OP HNDLR x_MtkCfg_Set_Global_Mute_Unmute, 0x0xd09fad
+rpcu_tl_log_start is already done
+c_rpc_start_cfg_server is called
+Open Server:mtkcfg
+_alloc_id
+Initialize cfg server done ##, id=4
+MMW init Phase 2 time elapsed: 1038000 (us)
+<APP_START> application_notify(2,1)
+<TimeStamp> Applications init start 33s.679091us L1607
+<TimeStamp> i4_level = 1
+<TimeStamp> vLs_Philips_Initialize done. 33s.679537us L1908
+<AM>>>>>>>>> [c_scc_comp_grp_set] ret=0
+<COMM_FUNC>find mtd_id succeed, mtd_id = 27
+[i4NFBPartitionRead]u4DevId = 27, u8Offset = 0x0, u4MemPtr = 0x49980d00, u4MemLen = 1234701568
+[NAND] ECC failed: 0
+[NAND] ECC corrected: 0
+[NAND] Number of bad blocks: 0
+[NAND] Number of bbt blocks: 0
+[AUD][AUD]asdata mode = asdata3[AUD], ch = ch9/ch10
+                                                   [AUD]Bonding: EAC3 unSupport on software
+                                                                                           [AUD]Bonding: TrueHD Support on software
+                                                                                                                                   [AUD]Bonding: No DTSLogo!
+                                                                                                                                                            [AUD]Bonding: DTSHD unSupport on e
+                                                                                                                                                                                             h
+                                                                                                                                                                                             .
+                                                                                                                                                                                             w
+                                                                                                                                                                                             e
+                                                                                                                                                                                             !
+                                                                                                                                                                                             e
+                                                                                                                                                                                             h
+                                                                                                                                                                                             .
+                                                                                                                                                                                             w
+                                                                                                                                                                                             e
+                                                                                                                                                                                             e
+                                                                                                                                                                                             h
+                                                                                                                                                                                             .
+                                                                                                                                                                                             e
+                                                                                                                                                                                             .
+                                                                                                                                                                                             .
+                                                                                                                                                                                             e
+                                                                                                                                                                                             .
+                                                                                                                                                                                             !
+                                                                                                                                                                                             .
+                                                                                                                                                                                             y
+[PostP] Set SCE video mode table = 0
+                                    [AUD][AUD]vDspSetDefaultChStatus!
