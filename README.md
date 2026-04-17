@@ -3,7 +3,7 @@ A repository containing info about the Philips BDP 3280,how to exploit it and ge
 ## Organization
 This repo is organized onto files, heres the list:
   - [Technical specs](technical_specs.md)
-  - [Service Manual](service_manual.pdf)
+  - [Service Manual](BDP328005_SB-EX-SI_134424932.pdf)
   - [Serial info](serial_info.md)
 
 ## Credits
