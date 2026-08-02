@@ -17,11 +17,11 @@ mtd13: 00200000 00020000 "kernel_1" Kernel
 mtd14: 00200000 00020000 "kernel_2" kernel  
 mtd15: 00300000 00020000 "initrd_1" Initramfs   
 mtd16: 01900000 00020000 "rootfs_normal_1" 1st SquashFS (contains lot of bin files, lib and /res)  
-mtd17: 01900000 00020000 "rootfs_enc_1" Netflix/DRM ?  
+mtd17: 01900000 00020000 "rootfs_enc_1" Contains modules
 mtd18: 00100000 00020000 "rootfs_it_1" BD-IT  
 mtd19: 00100000 00020000 "rootfs_enc_it_1" Encrypted BD IT  
 mtd20: 00200000 00020000 "initrd_2" BCK Initramfs ?  
-mtd21: 00c00000 00020000 "rootfs_normal_2" BCK SquashFS?  
+mtd21: 00c00000 00020000 "rootfs_normal_2" BCK 
 mtd22: 00400000 00020000 "rootfs_enc_2" BCK  
 mtd23: 00100000 00020000 "rootfs_it_2" BCK  
 mtd24: 00100000 00020000 "rootfs_enc_it_2" BCK  
