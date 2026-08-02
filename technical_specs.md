@@ -5,6 +5,7 @@ DRAM: 3 GB.
 Storage:  Toshiba TC58NVG0S3ETA00 - GBIT (128M × 8 BIT) CMOS NAND E²PROM. 
 
 ## Available U-Boot commands
+```
 ?       - alias for 'help'
 base    - print or set address offset
 bdinfo  - print Board Info structure
@@ -42,8 +43,9 @@ upg     - upg     - Upgrade image sub-system
 usb     - usb     - BDP USB sub-system
 usbboot - usbboot - boot from USB device
 version - print monitor version
-
+```
 ## U-Boot Environment
+```
 bootcmd=mt85xx_boot nand
 autostart=yes
 verify=no
@@ -66,3 +68,4 @@ stdout=serial
 stderr=serial
 bootargs=root=/dev/ram0 rw initrd=0x16700000,0x00020173 console=ttyMT0 kgdboc=ttyMT0 mem=384M mt85xx_reserve=367M,17M drvmem=182M,136M BL_Ver=3847
 Environment size: 533/8188 bytes
+```
