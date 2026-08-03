@@ -103,5 +103,5 @@ for i in {0..29}; do
 done
 ```
 When done, **congratulations, you now have a usable linux environment (While not very enjoyable) !**
-## How to dump the flash to uart
+## How to dump the flsh to uart
 TODO: Write this section, but it involves using a formatted hexdump command in conjuction with my hextobin python script in the tools directory, and 921600 baudrate. If someone really wants that (why? the dump is uploaded, see technical specs), create a, issue, and this'll be done ASAP.
