@@ -101,10 +101,10 @@ Environment size: 533/8188 bytes
 | mtd13 | 0x00200000 | 0x20000 | `kernel_1` | uImage (Linux kernel) | Kernel |
 | mtd14 | 0x00200000 | 0x20000 | `kernel_2` | uImage (Linux kernel) | Kernel (backup) |
 | mtd15 | 0x00300000 | 0x20000 | `initrd_1` | gzip-compressed newc cpio archive | Initramfs — gzip'd cpio (newc), contains `etc/init.d/*`, `boot/*.ko` (bsp, decry, tz, drv_mem, dbg_utility) |
-| mtd16 | 0x01900000 | 0x20000 | `rootfs_normal_1` | SquashFS v4 (gzip) | 1st SquashFS — `bin/lib/usr/res`. `lib/modules` on this rootfs is **empty**; presumed symlink to `rootfs_enc_1` by symmetry with mtd21/22 (**not yet verified**) |
-| mtd17 | 0x01900000 | 0x20000 | `rootfs_enc_1` | SquashFS v4 (gzip) | Presumed: contains `lib/modules/<kver>/BDP/*.ko` for rootfs_normal_1 (**not yet tested**) |
-| mtd18 | 0x00100000 | 0x20000 | `rootfs_it_1` | SquashFS v4 (gzip) | BD-IT |
-| mtd19 | 0x00100000 | 0x20000 | `rootfs_enc_it_1` | SquashFS v4 (gzip) | Encrypted BD-IT |
+| mtd16 | 0x01900000 | 0x20000 | `rootfs_normal_1` | SquashFS v4 (gzip) | 1st SquashFS — `bin/lib/usr/res`. `lib/modules` on this rootfs is **empty**; presumed symlink to `rootfs_enc_1` by symmetry with mtd21/22 (**confirmed**) |
+| mtd17 | 0x01900000 | 0x20000 | `rootfs_enc_1` | SquashFS v4 (gzip) | Contains `lib/modules/<kver>/BDP/*.ko` for rootfs_normal_1, and programs for the interface, like the browser, flash apps for hulu... (**confirmed**) |
+| mtd18 | 0x00100000 | 0x20000 | `rootfs_it_1` | SquashFS v4 (gzip) | BD-IT (contains libaacs.so & libbdplus.so) |
+| mtd19 | 0x00100000 | 0x20000 | `rootfs_enc_it_1` | SquashFS v4 (gzip) | Encrypted BD-IT (contains libmtk_rpcipc.so) |
 | mtd20 | 0x00200000 | 0x20000 | `initrd_2` | gzip-compressed newc cpio archive | Initramfs (backup) |
 | mtd21 | 0x00c00000 | 0x20000 | `rootfs_normal_2` | SquashFS v4 (gzip) | Backup SquashFS — `bin/lib/usr`. **Confirmed**: `lib/modules` is a symlink → `/mnt/rootfs_enc/lib/modules` |
 | mtd22 | 0x00400000 | 0x20000 | `rootfs_enc_2` | SquashFS v4 (gzip) | Backup. **Confirmed**: contains `lib/modules/2.6.35/BDP/*.ko` — usbcore, mtk_hcd, usb-storage, fat/vfat/msdos, nls_*, isofs, udf, fuse, ntfs/tntfs, libata, sata_mt85xx_mod, cdrom, sr_mod, Wi-Fi drivers (`hst_*`, `if_ath_usb`, `hif_usb`, `musb_hdrc`), bdpdrv, cbagent, drvcli, drvuart, osai, pdown, rm, kmem, adf, ext3/jbd/mbcache |
@@ -113,7 +113,7 @@ Environment size: 533/8188 bytes
 | mtd25 | 0x00100000 | 0x20000 | `upg_status` | Raw data | Upgrade status (read at boot) |
 | mtd26 | 0x00200000 | 0x20000 | `fast_init_logo` | PNG image | Fast boot logo |
 | mtd27 | 0x00100000 | 0x20000 | `fast_init_param` | Raw data | Fast boot parameters |
-| mtd28 | 0x00100000 | 0x20000 | `log_raw` | Raw data | Logs |
+| mtd28 | 0x00100000 | 0x20000 | `log_raw` | Raw UTF8 data | Logs |
 | mtd29 | 0x01620000 | 0x20000 | `ubi0` | UBI / UBIFS | UBIFS — persistent storage. Volume `ubi_boot` mounted at `/mnt/ubi_boot`, holds `log`, `APDA`, `browser`, `acfg`, `misc_data`, `CPS_manager`, `cust_part_1` (symlinked from their usual root-level paths) |
 **General notes:**
 - All `_1`/`_2` partitions are primary/backup pairs (except `rootfs_normal_2`/`rootfs_enc_2`, which are smaller — likely a lightweight rescue image).

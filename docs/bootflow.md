@@ -22,8 +22,7 @@
 [ Master Boot Script ] (/etc/init.d/rcS)
    │  Calls /etc/init.d/rcSinit
    │  Executes /etc/init.d/mtd_init.sh (mounts SquashFS rootfs_normal & rootfs_enc)
-   │  Executes /etc/init.d/usb_init.sh (loads USB/Wi-Fi drivers)
-   │  Executes /etc/init.d/upg_prog.sh (checks for USB firmware upgrade)
+   │  Calls /etc/init.d/rc5
    ▼
-[ Main Application / UI ]
-   │  Spawns main Blu-ray application stack, CPS_manager, and browser
+[ Master app boot script ] (/etc/init.d/rc5)
+   │  Spawns main Blu-ray application stack, network daemons...
