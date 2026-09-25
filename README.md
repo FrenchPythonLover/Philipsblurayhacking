@@ -10,4 +10,4 @@ This repo is organized onto files, heres the list:
   - [Tutorials (How to get UART, shell...)](/docs/tutos.md)
   - [Decompilation of the system](/docs/decompiling/readme.md)
 <hr>
-Made 
+Made with ❤️ by FrenchPythonLover
