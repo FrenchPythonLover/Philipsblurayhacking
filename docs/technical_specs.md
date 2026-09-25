@@ -12,9 +12,9 @@ SoC: Mediatek MT8553 (Same core as RPI1).
 RAM: 384MB DDR3 SDRAM.   
 Storage:  Toshiba TC58NVG0S3ETA00 - GBIT (128M × 8 BIT) CMOS NAND E²PROM (128M NAND). 
 ## Bootflow
-see [here](https://github.com/FrenchPythonLover/Philipsblurayhacking/blob/main/bootflow.md)
+see [here](https://github.com/FrenchPythonLover/Philipsblurayhacking/blob/main/docs/bootflow.md)
 
-Full boot logs are available [here](https://github.com/FrenchPythonLover/Philipsblurayhacking/blob/main/bootlog.txt)  
+Full boot logs are available [here](https://github.com/FrenchPythonLover/Philipsblurayhacking/blob/main/docs/bootlog.txt)  
 
 ## Available U-Boot commands
 ```

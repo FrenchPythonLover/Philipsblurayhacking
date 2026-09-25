@@ -2,7 +2,7 @@
  * File: /init
  * Location: MTD15
  * Decompiled By: @FrenchPythonLover
- * Code verified for logic errors by Gemini 3.6 Flash
+ * Code verified for logic errors by Gemini 3.6 Flash (only verified final recontructed code)
  */
 
 #include <stdio.h>

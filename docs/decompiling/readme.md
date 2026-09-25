@@ -8,16 +8,16 @@ This folder contains documentation and analysis for binaries, kernel modules, an
 
 | Target | Source Partition | Path / Component | Type | Status | Exploitation / Priority Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`init`** | `mtd15` (initrd) | `/init` | ELF Executable | 🟢 Complete | Easy to decompile |
-| **`sbin/init`** | `mtd16` (rootfs_normal_1) | `/sbin/init` | ELF Executable | 🟢 Complete | SysV Init |
-| **`Main firmware program`** | ? | `?` | ELF Executable | 🔴 Unanalyzed | **Very High Priority:** Might contain stock shell password |
-| **`upg_prog`** | `mtd16` (rootfs_normal_1) | `/etc/init.d/upg_prog` | ELF Executable | 🔴 Unanalyzed | **Medium Priority:** Handles firmware updates & validation |
+| **`init`** | `mtd15` (initrd) | `/init` | ELF Executable | Complete | Easy to decompile |
+| **`sbin/init`** | `mtd16` (rootfs_normal_1) | `/sbin/init` | ELF Executable | Complete | SysV Init |
+| **`Main firmware program`** | rootfs_normal_1 | `bdpprog` | ELF Executable | In Progress | **Very High Priority:** Confirmed contains shell logic (in further research phase) |
+| **`upg_prog`** | `mtd16` (rootfs_normal_1) | `/etc/init.d/upg_prog` | ELF Executable | Unanalyzed | **Medium Priority:** Handles firmware updates & validation |
 
 **Status Legend:**
-- 🔴 **Unanalyzed:** Extracted, not yet opened in Ghidra/IDA.
-- 🟡 **In Progress:** Base entry points identified, mapping functions.
-- 🟢 **Complete:** Fully documented, core algorithms understood.
-- ⚠️ **Vulnerable:** Confirmed vector for execution / shell access.
+-  **Unanalyzed:** Extracted, not yet opened in Ghidra/IDA.
+-  **In Progress:** Base entry points identified, mapping functions.
+-  **Complete:** Fully documented, core algorithms understood.
+-  **Vulnerable:** Confirmed vector for execution / shell access.
 
 ---
 
