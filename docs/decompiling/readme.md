@@ -10,7 +10,7 @@ This folder contains documentation and analysis for binaries, kernel modules, an
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`init`** | `mtd15` (initrd) | `/init` | ELF Executable | Complete | Easy to decompile |
 | **`sbin/init`** | `mtd16` (rootfs_normal_1) | `/sbin/init` | ELF Executable | Complete | SysV Init |
-| **`Main firmware program`** | rootfs_normal_1 | `bdpprog` | ELF Executable | In Progress | **Very High Priority:** Confirmed contains shell logic (in further research phase) |
+| **`Main firmware program`** | rootfs_normal_1 | `bdpprog` | ELF Executable | In Progress & Vulnerable | **Very High Priority:** Confirmed contains OEM shell logic (in further research phase) |
 | **`upg_prog`** | `mtd16` (rootfs_normal_1) | `/etc/init.d/upg_prog` | ELF Executable | Unanalyzed | **Medium Priority:** Handles firmware updates & validation |
 
 **Status Legend:**
