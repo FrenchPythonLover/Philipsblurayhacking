@@ -121,6 +121,6 @@ Environment size: 533/8188 bytes
 - `rootfs_enc` naming is misleading — not necessarily encrypted, more of an extension/modules partition for the main rootfs.
 
 ## Dumps
-I successfully dumped the entire flash using uart. For more info about this topic, please see [dumping flash to uart](https://github.com/FrenchPythonLover/Philipsblurayhacking/blob/main/tutos.md#How-to-dump-the-flash-to-uart)  
+I successfully dumped the entire flash using uart. For more info about this topic, please see [dumping flash to uart](https://github.com/FrenchPythonLover/Philipsblurayhacking/blob/main/docs/tutos.md#How-to-dump-the-flash-to-uart)  
 
 The entire dump is available on the [Internet Archive](https://archive.org/details/mtd0_20260803).  
